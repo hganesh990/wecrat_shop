@@ -1,0 +1,454 @@
+<!--WECRAT Shopping Page-->
+<!--HTML5, CSS3, Javascript, Bootstrap V5.1-->
+<!--fa fa icons V4.7-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--main.css-->
+    <link href="main.css" rel="stylesheet">
+    <!-- fa fa Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Main.CSS File -->
+    <link href="main.css" rel="stylesheet">
+    <title>Happy Shopping</title>
+    <link rel="icon" href="img/titleicon.PNG" type="image/icon type">
+  </head>
+  <body>
+      <!--Navigation Bar Start-->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(43, 92, 72);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/website-logo.svg" height="25px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><span class="navtext">SHOP</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="navtext">BLOG</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="navtext">ABOUT US</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="navtext">CONTACT US</span></a>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-right: 10px;" >
+            <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">    
+        </div>
+        <div style="margin-right: 30px;">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+        
+          <div style="margin-right: 25px;">
+            <a href="#"><img src="img/user-6-512.png" height="28px" width="32px"></a>  
+          </div>
+          <div style="margin-right: 25px;">
+            <a href="#"><img src="img/shopping-cart.png" height="32px" width="32px"></a>
+          </div>
+        </div>
+      </nav>
+      <!--Navigation Bar End-->
+
+      <!--Carousel Start-->
+    <div class="container-fluid" style="margin-top: 10px;">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/clay ering.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/clay eringIV.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/clay eringIV (2).png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Carousel End-->
+
+    <!--Shopping Contents-->
+    <div class="wecratprod">
+        <div class="container-fluid">
+            <div class="row">
+                <!--Catogory Part-->
+                <div class="col-md-3">
+                    <div class="leftside">
+                        <div id="acourdian">
+                            <h5 class="category">Filters <i class="fa fa-filter" aria-hidden="true"></i></h5>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Search By Price
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="330" max="7000" value="1500" class="slider" id="myRange">
+                                          </div>
+                                          <div class="price_range">
+                                            <p>Price: &#8377<span>330</span> --- &#8377<span id="demo"></span></p> 
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                          </div>
+                                          
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                     Search By catogory
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="filtersublist">
+                                            <li class="item">Women Clothing</li>
+                                            <li class="item">Home Decor</li>
+                                            <li class="dropdown">Jewellary
+                                                <ul class="filtersublist">
+                                                    <li class="item">Earrings</li>
+                                                    <li class="item">Pendents</li>
+                                                </ul>
+                                            </li>
+                                            <li class="item">Paintings</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Search By Colours
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body" style="align-content: center;">
+                                        <input type="checkbox" id="All" name="All" value="All">
+                                        <label for="All"> All</label><br>
+                                        <input type="checkbox" id="Blue" name="Blue" value="Blue">
+                                        <label for="Blue"> Blue</label><br>
+                                        <input type="checkbox" id="Red" name="Red" value="Red">
+                                        <label for="Red"> Red</label><br>
+                                        <input type="checkbox" id="Yellow" name="Yellow" value="Yellow">
+                                        <label for="Yellow"> Yellow</label><br><br>
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>                   
+                    </div>
+                </div>
+                <!--Product Part-->
+                <div class="col-md-9" >
+                  <div class="row" style="margin-left: 15px;">
+                      <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                       <div class="card">
+                           <div class="product-image">
+                               <img id="myImg" class="productimage" src="img/PicsArt_05-12-02.56.23-Sanya-Singh-600x600.jpg" alt="">
+                           </div>
+                            <!-- Trigger the Modal -->
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                            </div>
+                            <!--End Modals-->
+
+                           <div class="card-body">
+                               <p class="product-title">Connections - By Sanya Singh</p>
+                               <div class="d-flex align-items-center justify-content-between">
+                                   <div class="amount">
+                                       <span class="faicon">  <i class="fa fa-inr"> <b>3,360</b></i></span>
+                                       <p>Paintings</p>
+                                   </div>
+                                   <button type="button" class="btn btn-success">Add to cart</button>
+                               </div>
+                           </div>
+                       </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/IMG_20210816_090334-scaled-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Rainbow leaf embroidery</p><br>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 3,359</b></i></span>
+                                        <p>Home Decor</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/Handmade-welcome-hoop-Wecrat-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Handembroidered Welcome Hoop</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 1,344</b></i></span>
+                                        <p>Home Decor</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/Wecrat-Abstract-Painting-Raanan-5.1-600x600.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Space Series 005 – By Akshaya Moses</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 2,240</b></i></span>
+                                        <p>Paintings</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/IMG-20210708-WA0004-1-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Blue Marble Dangles</p><br>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 707</b></i></span>
+                                        <p>Earrings</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/Musical-Hoop-Wecrat-500x500.jpg" alt="" >
+                                
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Interactive musical embroidery hoop</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 1,679  </b></i></span>
+                                        <p>Home Decor</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/Embroidered-Pendant-Wecrat-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Handembroidered Metal Pendents</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 615</b></i></span>
+                                        <p>Pendents</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/Bespokebysaurabh-Brooch-view-3-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Mushroom Brooch Pin</p><br>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 784</b></i></span>
+                                        <p>Jewellary</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/PXL_20210826_0652262322-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Window of Happiness – Handmade Watercolor Bookmark</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 840</b></i></span>
+                                        <p>Paintings</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/IMG-20210723-WA0037-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Unicorn Pendant</p><br><br>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 531</b></i></span>
+                                        <p>Pendents</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/PSX_20210902_202347-768x769.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Keep life simple – Handmade watercolor bookmark</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon">  <i class="fa fa-inr"><b> 500</b></i></span>
+                                        <p>Paintings</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-sm-6 col-md-3 col-lg-3 marg">
+                        <div class="card">
+                            <div class="product-image">
+                                <img class="productimage" src="img/IMG_20210904_094014493-1-scaled-500x500.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="product-title">Pink Oval Dangle</p><br><br>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="amount">
+                                        <span class="faicon numberfont">  <i class="fa fa-inr"><b> 589</b></i></span>
+                                        <p>Earrings</p>
+                                    </div>
+                                    <button type="button" class="btn btn-success">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Products End-->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="container-fluid bg-secondary foot" style="text-align: center;">
+            <div class="row footer1" style="text-align: left;">
+                <div class="col-md col-sm-3">
+                    <div>
+                        <ul>
+                            <li><h5>Team</h5></li>
+                            <li>Our Story</li>
+                            <li>Journy of our creators</li><br>
+                            <li>Follow Us</li>
+                            <li><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 32px;"></i> <i class="fa fa-instagram align-center" aria-hidden="true" style="font-size: 32px;"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md col-sm-3">
+                    <div>
+                        <ul>
+                            <li><h5>Quick Access</h5></li>
+                            <li>Shop</li>
+                            <li>Join Us</li>
+                            <li>FAQ</li>
+                            <li>Conatct Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md col-sm-3">
+                    <div>
+                        <ul>
+                            <li><h5>Contact Info</h5></li><br>
+                            <li><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 24px;"></i>  Whitefield,Bangalore,Karnataka</li><br>
+                            <li><i class="fa fa-phone" aria-hidden="true" style="font-size: 24px;"></i>+91-8088630210</li><br>
+                            <li><i class="fa fa-envelope" aria-hidden="true" style="font-size: 24px;"></i> contact@wecrat.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <span style="text-align: center;"><br>Copyright &#169 2021 WECRAT</span>
+            </div>
+           
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <!-- Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
